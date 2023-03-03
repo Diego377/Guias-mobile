@@ -6,13 +6,13 @@ import android.graphics.Color
 import android.widget.Button
 import androidx.constraintlayout.widget.ConstraintLayout
 
-class MainActivity : AppCompatActivity() {
+class BackgroundActivity : AppCompatActivity() {
 //    override fun onCreate(savedInstanceState: Bundle?) {
 //        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
+//        setContentView(R.layout.activity_background)
 //    }
-    private val btnWhite: Button
-        get() = findViewById(R.id.btnWhite)
+private val btnWhite: Button
+    get() = findViewById(R.id.btnWhite)
     private val btnRed: Button
         get() = findViewById(R.id.btnRed)
     private val layoutPrincipal: ConstraintLayout
