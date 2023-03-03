@@ -3,6 +3,9 @@ package com.example.guias
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.graphics.Color
+import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import androidx.constraintlayout.widget.ConstraintLayout
 
@@ -28,5 +31,20 @@ class MainActivity : AppCompatActivity() {
         btnWhite.setOnClickListener {
             layoutPrincipal.setBackgroundColor(Color.WHITE)
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item?.itemId) {
+            R.id.menu_item1 -> {
+                Log.d("TEST", "PRESS ICON MENU")
+                true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
